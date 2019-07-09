@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+    @foreach (var blog in ViewBag.Blogs)
+    {
+        <li><a href="@blog.url"> @blog.Name  </a></li>
+    }
+
+</ul>
